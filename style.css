@@ -1,0 +1,1124 @@
+/*-----------------------------------------------------------------------------------
+Template Name: New HTML5 Template,
+Template URI: http://www.themectg.com
+Description: This is html5 template
+Author: Themectg
+Author URI: http://www.themectg.com
+Version: 1.0
+-----------------------------------------------------------------------------------
+CSS INDEX
+===================
+1. Google font
+2. Theme Default CSS
+3. Helper-class
+4. Button-style
+5. Mainmenu-area
+6. Section-Background
+7. Header-style
+8. Headline-style
+9. Skills-area
+10. Service-area
+11. Work-area
+12. Team-area
+13. Bar-effect-css
+14. Masp style
+15. Form-style
+16. Scroll-To-Top-Button
+17. Preloader-css
+-----------------------------------------------------------------------------------*/
+
+/*-----------------
+1 Fix for whitegap container
+------------------*/
+
+
+
+
+/*-----------------
+1 Fix for whitegap right flank
+------------------*/
+
+.container {
+   overflow: hidden;
+
+}
+
+#service-page .container {
+  width: 100%;
+
+}
+
+/*-----------------
+2 Fix for anchor not working in header
+------------------*/
+
+.header-area .v-center{
+  position: relative;
+  z-index: 999;
+}
+
+
+/*-----------------
+1. Google font
+------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+/*-------------------
+2. Theme Default CSS
+--------------------*/
+
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: #333333;
+}
+
+input:focus,
+button:focus,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+html,
+body {
+
+width: 100%;
+height: 100%;
+margin: 0px !important;
+padding: 0px !important;
+
+}
+
+body {
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/**
+*Helper-Classes
+**/
+
+.full-height {
+    width: 100%;
+    height: 100vh;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed,
+.absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.v-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.section-padding {
+    padding: 0 0;
+}
+
+.social-menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.social-menu li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.social-menu li a {
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 2.5em;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    font-size: 45px;
+}
+
+.social-menu li a:hover {
+    background-color: #000;
+    color: #ffffff;
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**
+*Default Background Class
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+
+
+.gray-bg {
+    background-color: #fff;
+}
+
+/**
+*Default Button
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+.button {
+    display: inline-block;
+    padding: 15px 60px;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #000;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: none;
+    -webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 5);
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 5);
+}
+
+.button.white,
+.button:hover {
+    background-color: #ffffff;
+    color: #000;
+    margin-top: 65px;
+    font-weight: 600;
+    font-size: 20px;
+
+
+}
+
+.p-ux a {
+
+margin: 50px;
+border: none;
+-webkit-box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.6);
+box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.button.white:hover {
+
+    background-color: #000;
+    color: #ffffff;
+}
+
+.button i {
+    margin-left: 5px;
+}
+
+/**
+*Page title
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+.page-title {
+    margin-bottom: 60px;
+}
+
+.page-title h2 {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/*.page-title h2:after {
+    content: "\e675";
+    font-family: 'themify';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+}*/
+
+/**
+*Box-style
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+.box {
+    padding: 50px 30px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 0 0 #ffffff;
+    box-shadow: 0 0 0 0 #ffffff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 5px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.box:hover {
+    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.box h4 {
+    text-transform: uppercase;
+}
+
+.box .box-icon {
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.box .box-icon img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.box:hover .box-icon img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0)
+}
+
+/**
+*Mainmenu-area
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+ .mainmenu-area {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    overflow: hidden;
+   font-size: 20px;
+
+}
+
+#primary-menu img {
+
+width: 10%;
+
+ }
+
+.navbar-brand > img {
+    display: block;
+    margin-left: 50px;
+}
+
+.overlay,
+.overlay a,
+.mainmenu-area a {
+    color: #ffffff;
+}
+
+.mainmenu-area #primary-menu > li > a:hover {
+      color: black !important;
+      background-color: transparent;
+    }
+
+.mainmenu-area .logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: inherit;
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+.mainmenu-area .logo h2 {
+    margin-bottom: 0;
+}
+
+.mainmenu-area #primary-menu > ul > li > a {
+    background: none;
+    padding: 10px 15px;
+    position: relative;
+    border-top: 3px solid transparent;
+    text-align: center;
+}
+
+
+
+.mainmenu-area #primary-menu > ul > li > a:hover:before,
+.mainmenu-area #primary-menu > ul > li.active > a:before {
+    opacity: 1;
+    top: 0;
+}
+
+.mainmenu-area #primary-menu ul li.active a,
+.mainmenu-area #primary-menu ul li a:hover {
+    border-top: 5px solid #fff;
+}
+
+.mainmenu-area.affix {
+    background-color: #000;
+}
+
+
+
+/**
+*Header-area
+////////////////   ////////////    //////////    ////////////    /////////   ///////////      //////////////   //////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+
+.header-area {
+    background: #000000 url('http://res.cloudinary.com/liberationfront/image/upload/v1529612328/bg_1_uigwp5.jpg') no-repeat scroll center center / cover;
+    z-index: 2;
+}
+
+.img-center {margin:0 auto;}
+
+
+
+.client-area{
+    background: #fff;
+}
+
+
+
+/*.anlge-bg {
+    background: url('images/fg1.png') no-repeat scroll center bottom -120px / 100% auto;
+    z-index: 2;
+}*/
+
+.overlay {
+    position: relative;
+}
+
+.overlay:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8
+}
+
+
+.header-text .button {
+        margin: 0 0 0 0;
+        font-size: 15px;
+}
+
+.header-text{
+background-color: rgba(84,84,84,0.4);
+margin-top: -30px;
+padding-bottom: 25px;
+margin-right: -30px;
+
+
+}
+
+
+
+
+
+/**
+*about
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+#about-page {
+    padding: 60px 0 15px 0;
+    width: 100%;
+    outline: none !important;
+}
+
+#about-page .col-md-8  {
+    padding: 50px 0 0 0;
+}
+
+#about-page .con2 {
+
+background-color: ;
+height: 100%;
+margin-top: -50px;
+}
+
+#about-page .row {
+margin-top: 0;
+}
+
+#about-page h1{
+
+color: #000;
+font-family: 'Bahnschrift', sans-serif;
+font-weight: 300;
+text-align: center;
+
+
+}
+
+#about-page p  {
+    color: #000;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+#about-page .con2 {
+
+background-color: ;
+height: 100%;
+
+}
+
+/*#feature-page .kutija1 p  {
+
+    margin-right: 30px;
+    margin-left: 0px !important;
+
+}*/
+
+#about-page .img1   {
+
+    margin-top: 60px;
+    margin-left: 15px;
+    width:330px; /* you can use % */
+      height: auto;
+
+}
+
+ #about-page .img2  {
+
+    margin-top: 55px;
+    margin-left: 40px;
+    height: auto;
+    width:400px; /* you can use % */
+        height: auto;
+  }
+
+
+/**
+*afhaal
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+#afhaal-page {
+    padding: 80px 0 60px 0;
+    width: 100%;
+    outline: none !important;
+    background-color: #ddfff0;
+}
+
+#afhaal-page .con1 {
+margin-top: 50px;
+}
+
+#afhaal-page img {
+    width: 65%;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+#afhaal-page .row {
+margin-top: 0;
+}
+
+#afhaal-page h1{
+
+color: #000;
+font-family: 'Bahnschrift', sans-serif;
+font-weight: 400;
+text-align: center;
+}
+
+#afhaal-page .adres1{
+margin-top: 20px;
+
+}
+
+#afhaal-page h2{
+
+color: #000;
+font-family: 'Bahnschrift', sans-serif;
+font-weight: 200;
+text-align: center;
+
+}
+
+#afhaal-page h3{
+
+color: #000;
+font-family: 'Bahnschrift', sans-serif;
+font-weight: 200;
+text-align: center;
+
+}
+
+#afhaal-page a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#afhaal-page h .text-center {
+  text-align: center;
+}
+
+#afhaal-page p  {
+    color: #000;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+/*#feature-page .kutija1 p  {
+
+    margin-right: 30px;
+    margin-left: 0px !important;
+
+}*/
+
+#afhaal-page .img1   {
+
+    margin-top: 100px;
+
+}
+
+#afhaal-page .img2  {
+
+    margin-top: 60px;
+    margin-left: 40px;
+
+  }
+
+
+
+
+
+/** recept
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+
+
+#recept-page {
+    padding: 80px 0 60px 0;
+    width: 100%;
+    outline: none !important;
+    background: url('recept_bg.png') no-repeat scroll center center / cover !important;
+}
+
+
+#custom_carousel .item {
+
+    color:#000;
+    background-color:none;
+    padding:20px 0;
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+
+/**
+*recept
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+#recept-page {
+    padding: 80px 0 60px 0;
+    width: 100%;
+    outline: none !important;
+    background-color: #fff;
+}
+
+
+
+
+.panel-heading:hover {
+    cursor:pointer;
+}
+.panel-heading {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.side-tab:hover {
+        cursor: pointer;
+    }
+    .panel.panel-default {
+        border: none;
+        box-shadow: none !important;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+    }
+    .panel-heading {
+        border: none;
+        background-color: #eee;
+        color: #000;
+
+    }
+    .panel-body {
+        background-color: #f5f5f5;
+        color: #000;
+    }
+    .panel-title {
+        font-weight: 400;
+        color: $white;
+    }
+
+/*----------------------------------
+    Macbook pro mockup from:
+    http://jaredhardy.com/minimal-devices/
+
+----------------------------------*/
+
+.md-macbook-pro {
+  display: block;
+  width: 55.3125em;
+  height: 31.875em;
+  font-size: 13px;
+  margin: 0 auto;
+
+  @media (max-width:1199px){
+    font-size: 11px;
+  }
+  @media (max-width:1024px){
+    font-size: 10px;
+  }
+
+  @media (max-width:767px){
+    font-size: 7px;
+  }
+
+  @media (max-width:320px){
+    font-size: 5px;
+  }
+
+}
+.md-macbook-pro .md-lid {
+  width: 45em;
+  height: 30.625em;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 1.875em;
+  border: solid 0.1875em #cdced1;
+  background: #131313;
+}
+.md-macbook-pro .md-camera {
+  width: 0.375em;
+  height: 0.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 1.0625em;
+  background: #000;
+  border-radius: 100%;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+}
+.md-macbook-pro .md-camera:after {
+  content: "";
+  display: block;
+  width: 0.125em;
+  height: 0.125em;
+  position: absolute;
+  left: 0.125em;
+  top: 0.0625em;
+  background: #353542;
+  border-radius: 100%;
+}
+.md-macbook-pro .md-screen {
+  width: 42.25em;
+  height: 26.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 2.0625em;
+  // background: #1d1d1d;
+  background: #fff;
+  overflow: hidden;
+}
+.md-macbook-pro .md-screen img {
+  width: 100%;
+}
+
+.md-macbook-pro.md-glare .md-lid:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 1.25em 0 0;
+  background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+}
+
+
+
+/**
+*Footer
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+.footer-area {
+  outline: none !important;
+    padding-top: 120px;
+    z-index: 1;
+/*  background: #000000 url('images/bathroom-2132342.jpg') no-repeat scroll center center / cover;*/
+margin-bottom: -30px;
+}
+
+.footer-bottom {
+
+  color: #fff;
+}
+
+.side-icon-boxes {
+
+    color: #000;
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+        margin-top: 25px;
+}
+
+.footer-area h2 {
+color: #000;
+font-family: 'Bahnschrift', sans-serif;
+font-weight: 300;
+font-size: 35px;
+
+}
+
+.footer-bg {
+    background: url('images/fg2.png') no-repeat scroll center bottom / 100% auto;
+    z-index: -1;
+}
+
+.footer-top {
+    margin-bottom: 150px;
+}
+
+.side-icon-box {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 80px;
+}
+
+.side-icon-box a {
+    color: #000;
+}
+
+.side-icon-box .side-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+}
+
+.side-icon-box strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-middle {
+    margin-bottom: 60px;
+}
+
+.footer-bottom {
+  /*  border-top: 1px solid rgba(255, 255, 255, 0.2);*/
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+/***
+*Contact-form
+*******************************************************************************************************/
+
+.contact-form .button {
+    letter-spacing: 2px;
+    min-width: 150px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    height: auto;
+    padding: 12px 20px;
+}
+
+.form-double input {
+    width: calc(50% - 10px);
+    float: left;
+    width: 100%;
+    color: #000;
+}
+
+.form-double input:last-child {
+    float: right;
+}
+
+textarea {
+    overflow: auto;
+    padding: 50px 296px;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background-color: #000 !important;
+    border: none;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #000;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.btn-info:hover {
+    background-color: #ffffff !important;
+    color: #000 !important;
+    border-color: #fff !important;
+    box-shadow: 2px 5px 20px -5px rgba(0, 0, 0, 1) !important;
+}
+
+
+/*-----------
+preloader
+------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+    background: linear-gradient(to bottom, #000 0%, #000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000', GradientType=0);
+    z-index: 99999999999;
+}
+
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ac1410ff;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+    animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+    transform: scale(1.1) rotateZ(90deg);
+}
+
+.sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+    transform: scale(1.1) rotateZ(180deg);
+}
+
+.sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+    transform: sca   le(1.1) rotateZ(270deg);
+}
+
+.sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+@-webkit-keyframes sk-foldCubeAngle {
+    0%,
+    10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-foldCubeAngle {
+    0%,
+    10% {
+        -webkit-transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%,
+    75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%,
+    100% {
+        -webkit-transform: perspective(140px) rotateY(180deg);
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+/**
+*FAQ
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+
+
+#faq-page {
+    padding: 100px 0 100px 0;
+    width: 100%;
+    outline: none !important;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+/**
+RESPONSIVE CSS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
